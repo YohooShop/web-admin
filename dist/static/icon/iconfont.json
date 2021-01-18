@@ -1,0 +1,23 @@
+{
+  "id": "1918691",
+  "name": "mall",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14597471",
+      "name": "Chevron right double 1 - 24px",
+      "font_class": "Chevronrightdouble1-24px",
+      "unicode": "e984",
+      "unicode_decimal": 59780
+    },
+    {
+      "icon_id": "3378220",
+      "name": "更多",
+      "font_class": "form_icon_more_fuzhi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

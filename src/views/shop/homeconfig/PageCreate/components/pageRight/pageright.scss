@@ -1,0 +1,310 @@
+@import '@/assets/styles/var.scss';
+
+//右侧组件编辑栏
+.page-right{
+    .full-container{
+        height:100%;
+        overflow: hidden;
+    }
+    
+    .component-name{
+        height:0.45rem;
+        line-height:0.45rem;
+        border-bottom:0.01rem solid $border-color-gray;
+        padding-left:0.2rem;
+    }    
+
+
+    //页面和组件设置
+    .page-set, .componet-set{
+        padding:0.35rem 0.2rem 0.2rem;
+        box-sizing: border-box;
+        max-height:700px;
+        overflow:auto;
+
+        .setting-item{
+            margin-bottom:0.4rem;
+            .item-name{
+                flex:0 0 1.25rem;
+                text-align: right;
+                padding-right:0.1rem;
+                color: #3a3838;
+                font-size:$fs-14;
+            }
+            .item-value{
+                .el-input {
+                    padding-left: 0.2rem;
+                }
+                .el-date-editor{
+                    width:100%;
+                }
+                .el-radio{
+                    margin-right:0.1rem;
+                    .el-radio__label{
+                        padding-left:0.05rem;
+                    }
+                }
+                .img-uploader{
+                    position: relative;
+                    width:1.65rem;
+                    img{
+                        width:100%;
+                    }
+                    .share-image{
+                        width:1.65rem;
+                        height:1.65rem;
+                    }
+                    .backtop-image{
+                        width:0.4rem;
+                    }
+                }
+                .value-right{
+                    flex:0 0 0.6rem;
+                    text-align: right;
+                }          
+                
+            }
+        }
+
+        .border-wraper{
+            border:0.01rem solid $border-color-gray;
+            padding:0.1rem 0.15rem 0.1rem 0;
+        }
+
+        .tip-info{
+            color: #999;
+            font-size:0.12rem;
+            margin-top:0.05rem;
+        }
+
+        //轮播图属性
+        .setting-carousels{
+            .carousels-item{
+                position: relative;
+                padding:0 0.2rem 0 0.1rem;
+                margin-bottom:0.1rem;
+                display: flex;
+                align-items: center;
+
+                .item-img{
+                    width:1rem;
+                    flex: none;
+                    img{
+                        width:100%;
+                        display: block;
+                    }
+                }
+                .item-attrs{
+                    margin-left:0.15rem;
+                    flex:1 1 auto;
+                    .attr-wraper{      
+                        margin:0.1rem auto;
+                        display: flex;
+
+                        .attr-name{
+                            color: #3a3838;
+                            font-size:$fs-14;
+                        }                
+                        .attr-value{
+                            .el-radio{
+                                margin-right:0.12rem;
+                            }
+                            .el-radio:last-of-type{
+                                margin-right:0;
+                            }
+                        }        
+                    }
+                }
+                .item-operate{
+                    position:absolute;
+                    height:100%;
+                    right:-0.1rem;
+                    width:0.26rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+                    
+                    i{
+                        margin:0.06rem auto;
+                        color: #1593ff;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            
+            .carousels-add{
+                padding:0.1rem 0;
+                margin-left:0.1rem;
+                border: 0.01rem solid $border-color-gray;
+                cursor: pointer;
+                .addbtn{
+                    color: #1593ff;
+                    font-size:$fs-18;
+                    margin-bottom:0.1rem;
+                }
+            }
+        }
+        //商品类别属性
+        .setting-indexGrouping{
+            margin-top: 0.4rem;
+            overflow:auto;
+            .item-attrs{
+                margin-left:0.15rem;
+                flex:1 1 auto;
+                .attr-wraper{      
+                    margin:0.1rem auto;
+                    display: flex;
+
+                    .attr-name{
+                        color: #3a3838;
+                        font-size:$fs-14;
+                    }                
+                    .attr-value{
+                        .el-radio{
+                            margin-right:0.12rem;
+                        }
+                        .el-radio:last-of-type{
+                            margin-right:0;
+                        }
+                    }        
+                }
+            }
+            .goods-item{
+                 margin-top: 0.4rem;
+                position: relative;
+                padding:0 0.2rem 0 0.1rem;
+                margin-bottom:0.1rem;
+                display: flex;
+                align-items: center;
+                
+                .item-img{
+                    width:1rem;
+                    flex: none;
+                    img{
+                        width:100%;
+                        display: block;
+                    }
+                }
+                .item-attrs{
+                    margin-left:0.15rem;
+                    flex:1 1 auto;
+                    .attr-wraper{      
+                        margin:0.1rem auto;
+                        display: flex;
+
+                        .attr-name{
+                            color: #3a3838;
+                            font-size:$fs-14;
+                        }                
+                        .attr-value{
+                            .el-radio{
+                                margin-right:0.12rem;
+                            }
+                            .el-radio:last-of-type{
+                                margin-right:0;
+                            }
+                        }        
+                    }
+                }
+                .item-operate{
+                    position:absolute;
+                    height:100%;
+                    right:-0.1rem;
+                    width:0.26rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+
+                    i{
+                        margin:0.06rem auto;
+                        color: #1593ff;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            .goods-add{
+                padding:0.2rem 0;
+                margin-left:0.1rem;
+                border: 0.01rem solid $border-color-gray;
+                cursor: pointer;
+                .addbtn{
+                    color: #1593ff;
+                    font-size:$fs-18;
+                    margin-bottom:0.2rem;
+                    margin-top: 0.2rem;
+                    margin-left:0.2rem;
+                }
+            }
+        }
+        .setting-indexCoupon{
+            .coupon-item{
+                position: relative;
+                padding:0 0.2rem 0 0.1rem;
+                margin-bottom:0.1rem;
+                display: flex;
+                align-items: center;
+                .item-attrs{
+                    margin-left:0.15rem;
+                    flex:1 1 auto;
+                    .attr-wraper{      
+                        margin:0.1rem auto;
+                        display: flex;
+
+                        .attr-name{
+                            color: #3a3838;
+                            font-size:$fs-14;
+                        }                
+                        .attr-value{
+                            .el-radio{
+                                margin-right:0.12rem;
+                            }
+                            .el-radio:last-of-type{
+                                margin-right:0;
+                            }
+                        }        
+                    }
+                }
+                .item-add{
+                    color: #1593ff;
+                    cursor: pointer;
+                }
+                .item-operate{
+                    position:absolute;
+                    height:100%;
+                    right:-0.1rem;
+                    width:0.26rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+
+                    i{
+                        margin:0.06rem auto;
+                        color: #1593ff;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .coupon-add{
+                padding:0.1rem 0;
+                margin-left:0.1rem;
+                border: 0.01rem solid $border-color-gray;
+                cursor: pointer;
+                .addbtn{
+                    color: #1593ff;
+                    font-size:$fs-18;
+                    margin-bottom:0.1rem;
+                }
+            }
+        }
+        
+    }    
+}  
+

@@ -1,0 +1,21 @@
+const getters = {
+  user: state => state.user.user,
+  sidebar: state => state.app.sidebar,
+  device: state => state.app.device,
+  visitedViews: state => state.tagsView.visitedViews,
+  cachedViews: state => state.tagsView.cachedViews,
+  token: state => state.user.token,
+  avatar: state => state.user.avatar,
+  name: state => state.user.name,
+  email: state => state.user.email,
+  phone: state => state.user.phone,
+  sex: state => state.user.sex,
+  nickName: state => state.user.nickName,
+  roles: state => state.user.roles,
+  aliyunOssUploadApi: state => state.api.aliyunOssUploadApi,
+  baseApi: state => state.api.baseApi,
+  fileUploadApi: state => state.api.fileUploadApi,
+  permission_routers: state => state.permission.routers,
+  uploadApi: state => state.api.uploadApi,
+}
+export default getters
